@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #FFC0CB;
+
+}
+html {
+    /* 10px */
+    font-size : 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    
+    box-sizing: border-box;
+}.register {
+    font-size: 1.4rem;
+    margin-top: 25px;
+}
+
+.register-link {
+    text-decoration: none;
+    color: #e3abb4;
+    font-weight: 400;
+}
+
+.register-link:hover {
+    color: #cd99a2;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 24px 16px;
+    text-align: center;
+    color:rgb(104, 104, 104);
+    font-size: 1.6rem;
+}
+
+.btn-login {
+    min-width: 80px;
+    height: 32px;
+    color: #000 !important;
+    font-size: 1.4rem !important;
+    border-color: #f891a4 !important;
+}
+
+.btn-register {
+    min-width: 80px;
+    height: 32px;
+    background-color: #f891a4 !important;
+    font-size: 1.4rem !important;
+}
+
+
+.nav_btn-search-icon {
+    font-size: 1.4rem;
+    color: #e3abb4
+}
+
+.nav_btn-search {
+    background-color: #fff;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    width: 60px;
+    border-radius: .375rem;
+    outline: none;
+    margin-left: 0.25rem;
+    border: 1px solid var(--primary-color);
+}
+
+.nav_btn-search:hover {
+    background-color: #f44d69
+}
+
+.form-search {
+    font-size: 1.4rem !important;
+}
+
+.drop_menu {
+    border: 2px solid var(--primary-color) !important;
+    margin-top: -3px !important;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    width: 150px;
+}
+
+.drop_menu-item {
+    font-size: 1.4rem;
+    font-weight: 500 !important;
+    padding: 8px 16px !important;
+}
+
+.drop_menu-item:hover {
+    background-color: var(--primary-color) !important;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/image/CutePet.png" sizes="" />
+    <link rel="stylesheet" href="/src/css/header.css"/>
+    <link rel="stylesheet" href="/src/css/home-page.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.1.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="/src/css/footer.css">
+   
+</head>
+
+<body>
+
+
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFC0CB; margin-bottom: 5%; "> 
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="/image/logo.png" alt="" style="width: 50px; height: 46px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-5">
+                        <li class="nav-item dropdown fs-2" style="margin-right: 30px;">
+                            <a class="nav-link dropdown-toggle text-dark hover" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Thú cưng
+                            </a>
+                            <ul class="dropdown-menu drop_menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item drop_menu-item" href="#">Chó</a></li>
+                                <li><a class="dropdown-item drop_menu-item" href="#">Mèo</a></li>
+                                <li><a class="dropdown-item drop_menu-item" href="#">Chim</a></li>
+                                <li><a class="dropdown-item drop_menu-item" href="#">Cá</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a class="nav-link fs-2 text-dark" href="#">Thức ăn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2 text-dark" href="#">Phụ kiện</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" style="display: flex;">
+                    <input type="search" class="form-control form-control-dark form-search"  placeholder="Nhập để tìm kiếm sản phẩm" aria-label="Search">
+                    <button class="nav_btn-search">
+                        <i class="nav_btn-search-icon fas fa-search"></i>
+                    </button>
+                </form>
+    
+               
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2 btn-login">Đăng nhập</button>
+                    <button type="button" class="btn btn-register">Đăng ký</button>
+                </div>
+                <div class="dropdown text-end">
+                    
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="border: 2px solid #5fc2c9; word-wrap: break-word;">
+                        <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user"></i> Tên user</a> </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-id-badge"></i> Hồ sơ</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Thẻ Chứa Slideshow -->
+        <div class="slideshow-container">
+            <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="pic-bor" src="/image/wp2544022.jpg" style="width:100%">
+                <div class="text">Thú cưng</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="pic-bor" src="/image/do-choi-cho-thu-cung.jpg" style="width:100%">
+                <div class="text">Phụ kiện</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="pic-bor" src="/image/thuc-an-cho-thu-cung-4.jpg" style="width:100%">
+                <div class="text">Thức ăn</div>
+            </div>
+
+            <!-- Nút điều khiển mũi tên-->
+        </div>
+        <br>
+        <!-- Nút tròn điều khiển slideshow-->
+        <div style="text-align:center; margin-top: 40px;">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+
+        <div class="content">
+            <div class="hot-search">
+                <h2 class="sea-header">Tìm kiếm nhiều nhất</h2>
+
+                <div class="sea-content">
+                    <div class="sea-content-child">
+                        <div class="sea-item">
+                            <img src="/image/ChoPhuQuoc.jpg" alt="">
+                            <p class="item-name">Chó Phú Quốc</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/MeoAnhLongDai.jpg" alt="">
+                            <p class="item-name">Mèo Anh lông dài</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/BengalTrang.jpg" alt="">
+                            <p class="item-name">Mèo Bengal trắng</p>
+                        </div>
+                    </div>
+                    <div class="sea-content-child">
+                        <div class="sea-item">
+                            <img src="/image/DogAUS.jpg" alt="">
+                            <p class="item-name">Chó Australian Shepherd</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/Becgie.jpg" alt="">
+                            <p class="item-name">Chó Becgie</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/ChimVA.jpg" alt="">
+                            <p class="item-name">Chim Vàng Anh</p>
+                        </div>
+                    </div>
+                    <div class="sea-content-child">
+                        <div class="sea-item">
+                            <img src="/image/ChimSC.jpg" alt="">
+                            <p class="item-name">Chim Sơn Ca</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/Whinkas.jpg" alt="">
+                            <p class="item-name">Whiskas tuna 1,2kg</p>
+                        </div>
+                        <div class="sea-item">
+                            <img src="/image/NylonBox.jpg" alt="">
+                            <p class="item-name">Túi Nylon Trung</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="new-post">
+                <h2 class="post-header">Tin đăng mới</h2>
+                <div class="post-content">
+                    <div class="post">
+                        <img src="/image/cat.jpg" class="post-img" alt="Mèo Anh Lông dài">
+                        <div class="post-info">
+                            <p class="post-name">Mèo Anh lông dài - British Longhair</p>
+                            <p class="post-money">5,769,000 VND</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="/image/cat.jpg" class="post-img" alt="Mèo Anh Lông dài">
+                        <div class="post-info">
+                            <p class="post-name">Mèo Anh lông dài - British Longhair</p>
+                            <p class="post-money">5,769,000 VND</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="/image/cat.jpg" class="post-img" alt="Mèo Anh Lông dài">
+                        <div class="post-info">
+                            <p class="post-name">Mèo Anh lông dài - British Longhair</p>
+                            <p class="post-money">5,769,000 VND</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="/image/cat.jpg" class="post-img" alt="Mèo Anh Lông dài">
+                        <div class="post-info">
+                            <p class="post-name">Mèo Anh lông dài - British Longhair</p>
+                            <p class="post-money">5,769,000 VND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            Copyright © by HeloTeam. Design by HeloTeam
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script>
+        // let slideIndex = 0;
+        // showSlides();
+        // function showSlides() {
+        //     let i;
+        //     let slides = document.getElementsByClassName("mySlides");
+        //     let dots = document.getElementsByClassName("dot");
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";  
+        //     }
+        //     slideIndex++;
+        //     if (slideIndex > slides.length) {
+        //         slideIndex = 1
+        //     }    
+        //     for (i = 0; i < dots.length; i++) {
+        //         dots[i].className = dots[i].className.replace(" active", "");
+        //     }
+        //     slides[slideIndex-1].style.display = "block";  
+        //     dots[slideIndex-1].className += " active";
+        //     setTimeout(showSlides, 3000);
+        // }
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+                slideIndex = 0
+            }
+            //tự động chuyển đổi slide sau 8s
+            setTimeout(showSlides, 500);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+</body>
+
+</html>

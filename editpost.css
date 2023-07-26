@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: linear-gradient(0, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(/image/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.content {
+    /*   */
+    /* margin-left: 15%; */
+    list-style-type: none;
+    margin-bottom: 50px;
+    /*   */
+}
+
+.profile {
+    margin-right: 5%;
+    /* display: block; */
+    border-style: solid;
+    border-color: #ffb2c0;
+    border-radius: 18px;
+    height: 250px;
+    width: 350px;
+    margin-bottom: 4%;
+    background-color: #fff;
+}
+
+.profile-name {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.fa-user-tie {
+    padding: 20px 20px;
+    font-size: 40px;
+    color: #ffb2c0;
+}
+
+.name {
+    padding: 20px;
+}
+
+.name .name-text {
+    font-size: 22px;
+    color: #ffb2c0;
+    font-weight: 500;
+}
+
+.name a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.profile .account {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.profile .post {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.post a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.info {
+    /* margin-left: 100px; */
+    /* display: block; */
+    border-style: solid;
+    border-color: #ffb2c0;
+    border-radius: 18px;
+    height: auto;
+
+    padding-left: 30px;
+    padding-top: 12px;
+    background-color: #fff;
+}
+
+.info h2 {
+    color: #ffb2c0;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.info .field-name {
+    line-height: 35px;
+}
+
+.info .field-name-description {
+    line-height: 90px;
+}
+
+.info .field-name-image {
+    line-height: 75px;
+}
+
+.info .txt-field {
+    display: flex;
+    position: relative;
+    margin: 30px 0;
+}
+
+.info .txt-option {
+    display: flex;
+}
+
+.txt-option .option-category {
+    margin-left: 85px;
+    margin-right: 4%;
+    border-style: solid;
+    border-color: #ffb2c0;
+    width: 28%;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+    color: #6d6d6d;
+}
+
+.txt-option .option-pet {
+    border-style: solid;
+    border-color: #ffb2c0;
+    width: 28%;
+    height: 35px;
+    font-size: 18px;
+    outline: none;
+    color: #6d6d6d;
+}
+
+.txt-field .add-image {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 66px;
+    width: 60%;
+    height: 75px;
+
+}
+
+.txt-field img {
+    width: 85px;
+    height: 70px;
+    padding: 0;
+    border: solid #ffb2c0;
+    border-radius: 20px;
+}
+
+.info input {
+    width: 60%;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 18px;
+    background: none;
+    border: 2px solid;
+    border-color: #ffb2c0;
+    margin-left: 5%;
+    outline: none;
+}
+
+input[placeholder="Nhập tên"] {
+    margin-left: 15%;
+    height: 35px;
+}
+
+input[placeholder="Nhập giá"] {
+    margin-left: 15%;
+    height: 35px;
+}
+
+input[placeholder="Mô tả"] {
+    margin-left: 13%;
+    height: 90px;
+}
+
+input[type="submit"] {
+    width: 15%;
+    height: 50px;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    background: #ffb2c0;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #a5bfd6;
+    border: 1px solid;
+}

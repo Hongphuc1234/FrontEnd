@@ -1,0 +1,163 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%
+    }
+
+    body {
+        height: 100%;
+        background-image: linear-gradient(0, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/image/background.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .main {
+        margin-top: 10%;
+        height: 100%;
+        position: relative;
+    }
+
+    .content {
+        /* padding-top: 10%;
+        margin-left: 15%; */
+        list-style-type: none;
+        /* display: flex; */
+    }
+
+    .row_content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content .profile {
+        margin-right: 5%;
+        margin-bottom: 5%;
+        border-style: solid;
+        border-color: #ffb2c0;
+        border-radius: 18px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .content .profile-name {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .content .fa-user-tie {
+        padding: 20px 20px;
+        font-size: 40px;
+        color: #ffb2c0;
+    }
+
+    .content .name {
+        padding: 20px;
+    }
+
+    .name .name-text {
+        font-size: 22px;
+        color: #ffb2c0;
+        font-weight: 500;
+    }
+
+    .name a {
+        color: #6d6d6d;
+        text-decoration: none;
+    }
+
+    .profile .account {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .account a {
+        color: #6d6d6d;
+        text-decoration: none;
+    }
+
+    .profile,
+    .info {
+        background-color: #fff;
+    }
+
+    .profile .post {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .post a {
+        color: #6d6d6d;
+        text-decoration: none;
+    }
+
+    .content .info {
+        border-style: solid;
+        border-color: #ffb2c0;
+        border-radius: 18px;
+        height: auto;
+        width: 800px;
+        padding-left: 30px;
+        padding-top: 12px;
+    }
+
+    .info h2 {
+        color: #ffb2c0;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .info .des {
+        color: #6d6d6d;
+        font-size: 22px;
+    }
+
+    .info .txt-field {
+        display: flex;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    .info .acc-name {
+        margin-left: 5%;
+    }
+
+    .info input {
+        width: 60%;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 18px;
+        background: none;
+        border: 2px solid;
+        border-color: #ffb2c0;
+        margin-left: 5%;
+        outline: none;
+    }
+
+    input[placeholder="Nhập tên"] {
+        margin-left: 15%;
+        height: 35px;
+    }
+
+
+    .table-element td {
+        padding: 10px;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 24px 16px;
+        text-align: center;
+        color: rgb(104, 104, 104);
+        font-size: 1.6rem;
+        position: absolute;
+        bottom: 0;
+    }

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/src/css/product.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+	<link href="/font/fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/src/css/manage-user.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/src/css/reponsive.css">
+	<link rel="stylesheet" href="/src/css/footer.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFC0CB; margin-bottom: 5%;">
+		<div class="container">
+			<a href="#" class="navbar-brand">
+				<img src="/image/logo.png" alt="" style="width: 50px; height: 46px;">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="navbarNavDropdown">
+				<ul class="navbar-nav mx-5">
+					<li class="nav-item dropdown fs-2" style="margin-right: 30px;">
+						<a class="nav-link dropdown-toggle text-dark hover" href="#" id="navbarDropdownMenuLink"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Thú cưng
+						</a>
+						<ul class="dropdown-menu drop_menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item drop_menu-item" href="#">Chó</a></li>
+							<li><a class="dropdown-item drop_menu-item" href="#">Mèo</a></li>
+							<li><a class="dropdown-item drop_menu-item" href="#">Chim</a></li>
+							<li><a class="dropdown-item drop_menu-item" href="#">Cá</a></li>
+						</ul>
+					</li>
+					<li class="nav-item" style="margin-right: 30px;">
+						<a class="nav-link fs-2 text-dark" href="#">Thức ăn</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fs-2 text-dark" href="#">Phụ kiện</a>
+					</li>
+
+				</ul>
+			</div>
+			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" style="display: flex;">
+				<input type="search" class="form-control form-control-dark form-search"
+					placeholder="Nhập để tìm kiếm sản phẩm" aria-label="Search">
+				<button class="nav_btn-search">
+					<i class="nav_btn-search-icon fas fa-search"></i>
+				</button>
+			</form>
+
+
+			<div class="text-end">
+				<button type="button" class="btn btn-outline-light me-2 btn-login">Đăng nhập</button>
+				<button type="button" class="btn btn-register">Đăng ký</button>
+			</div>
+			<div class="dropdown text-end">
+
+				<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1"
+					style="border: 2px solid #5fc2c9; word-wrap: break-word;">
+					<li><a class="dropdown-item" href="#"> <i class="fa-solid fa-user"></i> Tên user</a> </li>
+					<li><a class="dropdown-item" href="#"><i class="fa-solid fa-id-badge"></i> Hồ sơ</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Đăng
+							xuất</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<nav aria-label="breadcrumb" class="reponsive" style="font-size: 1.6rem;">
+		<ol class="breadcrumb breadcrumb-main">
+		  <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-secondary fs-3 breadcrumb-link">Trang chủ</a></li>
+		  <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-secondary fs-3 breadcrumb-link">Thú cưng</a></li>
+		  <li class="breadcrumb-item active fs-3 breadcrumb-item-main" aria-current="page">Mèo</li>
+		</ol>
+	</nav>
+	<div class="container text-center container-main" style="font-size: 1.6rem;">
+		<div class="row">
+			<div class="col-12 col-md-12 col-sm-12 col-xxl-6 col-lg-12">
+				<div class="container">
+					<div>
+						<img class="mySlides" src="/image/02-1.jpg" style="width:100%;display:none">
+						<img class="mySlides" src="/image/3-2.jpg" style="width:100%">
+						<img class="mySlides" src="/image/5-2.jpg" style="width:100%;display:none">
+						<div class="row" style="margin-top: 2%;">
+							<div class="col-lg-4 col-sm-4 col-md-4 col-4">
+								<img class="demo opacity hover-opacity-off" src="/image/02-1.jpg" style="cursor:pointer"
+									onclick="currentDiv(1)">
+							</div>
+							<div class="col-lg-4 col-sm-4 col-md-4 col-4">
+								<img class="demo  opacity hover-opacity-off" src="/image/3-2.jpg" style="cursor:pointer"
+									onclick="currentDiv(2)">
+							</div>
+							<div class="col-lg-4 col-sm-4 col-md-4 col-4">
+								<img class="demo  opacity hover-opacity-off" src="/image/5-2.jpg" style="cursor:pointer"
+									onclick="currentDiv(3)">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-12 col-sm-12 col-xxl-6 col-lg-12 content">
+				<h2 class="content-heading">Mèo Anh lông dài - British Long hair</h2>
+				<p class="content-separator"></p>
+				<p class="content-price">5,769,999đ</p>
+				<p class = "content-description">Mèo Anh lông ngắn được tìm mua nhiều nhất ở nước ta hiện nay bởi khả năng thích nghi với khí hậu Việt
+					Nam. Tuy lông của chúng ngắn nhưng rất dày, giữ ấm cho cơ thể trong những ngày đông. Màu lông chủ
+					yếu là màu xám, tabby, silver. Giống mèo này có phần đầu khá to, mắt tròn, bàn chân mũm mĩm tròn
+					xoe, sự đáng yêu và lười biếng của chúng làm cho bao con sen thích thú.</p>
+				<div class="contact">
+					<span class="contact-phone"><a class="contact-phone-link" href="tel:0702788202"><i class="fa-solid fa-phone"></i>0702788202</a></span>
+					<span class="contact-chat"><a href="#"><i class="fa-solid fa-comment"></i>Chat</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="col-md-12" id="fbcomment">
+			<div class="header_comment">
+				<div class="row">
+					<div class="col-12 text-left">
+						<span class="count_comment">264235 Comments</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="body_comment">
+				<div class="row">
+					<div class="avatar_comment col-md-1">
+						<img src="/image/logo.png" alt="avatar" />
+					</div>
+					<div class="box_comment col-md-11">
+
+						<!-- <div class="input commentar" role="textbox" contenteditable >abc</div> -->
+						<textarea class="commentar" placeholder="Add a comment..."
+							onkeypress="handleKeyPress(event)"></textarea>
+
+						<div class="box_post">
+							<div class="pull-right">
+								<button onclick="submit_comment(this)" type="button" value="1">Post comment</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<ul id="list_comment" class="col-md-12">
+						<!-- Start List Comment 1 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="/image/logo.png" alt="avatar" />
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Teen user</h4>
+								<p>Đây là comment</p>
+								<div class="tools_comment">
+									<a class="replay" href="#">Reply</a>
+									<span>26m</span>
+								</div>
+								<ul class="child_replay">
+									<li class="box_reply row">
+										<div class="avatar_comment col-md-1">
+											<img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
+												alt="avatar" />
+										</div>
+										<div class="result_comment col-md-11">
+											<h4>Sugito</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+												industry. Lorem Ipsum has been the industry's.</p>
+											<div class="tools_comment">
+												<div class="tools_comment">
+													<a class="like" href="#">Like</a>
+													<span aria-hidden="true"> · </span>
+													<a class="replay1" href="#">Reply</a>
+													<span aria-hidden="true"> · </span>
+													<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span>
+													<span aria-hidden="true"> · </span>
+													<span>26m</span>
+												</div>
+
+											</div>
+											<ul class="child_replay"></ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<!-- Start List Comment 2 -->
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar" />
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>Gung Wah</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+									Ipsum has been the industry's.</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Like</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#">Reply</a>
+									<span aria-hidden="true"> · </span>
+									<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span>
+									<span aria-hidden="true"> · </span>
+									<span>26m</span>
+								</div>
+								<ul class="child_replay"></ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		Copyright © by HeloTeam. Design by HeloTeam
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="/src/js/product.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

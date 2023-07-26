@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: linear-gradient(0, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/image/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+    max-width: 750px;
+    position: relative;
+    margin: 100px auto 0;
+}
+
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+    display: none;
+}
+
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #D17F94;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(254, 210, 210, 0.8);
+}
+
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+.text {
+    color: #FFB2C0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Thiết lập style cho số hiển thị của phần tử */
+.numbertext {
+    color: #D17F94;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* css slide ảnh */
+
+.pic-bor {
+    height: 350px;
+    border-radius: 20px;
+}
+
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FFB2C0;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #D17F94;
+}
+
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hot-search,
+.new-post {
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.hot-search {
+    width: 65%;
+    text-align: center;
+    border: 4px solid #ffb2c0;
+    border-radius: 15px;
+    padding: 0% 2% 2% 2%;
+}
+
+.hot-search .sea-header {
+    font-size: 2rem;
+}
+
+.hot-search>h2 {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 10px;
+}
+
+.hot-search .sea-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hot-search .sea-content .sea-content-child {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.hot-search .sea-content .sea-content-child .sea-item {
+    width: 30%;
+
+}
+
+.hot-search .sea-content .sea-content-child .sea-item {
+    width: 30%;
+}
+
+.sea-item img {
+    width: 95%;
+    height: 195px;
+    padding: 0;
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+.new-post {
+    width: 25%;
+    text-align: center;
+    border: 4px solid #ffb2c0;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+
+.new-post>h2 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.new-post .post-content {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.new-post .post-content .post {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.post img {
+    width: 60%;
+    height: 150px;
+    padding: 0;
+    margin-left: 7px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.post:hover,
+.sea-item:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    color: #D17F94;
+    cursor: pointer;
+}
+
+.sea-item .item-name,
+.post-info .post-name {
+    font-size: 1.6rem;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.post-info .post-money {
+    font-size: 1.4rem;
+}
+
+.new-post .post-content .post {
+    margin-top: 6%;
+}
+
+
+
+/* 
+.hot-search .sea-item:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.hot-search, .new-post {
+    padding: 20px;
+    margin: 2% 15%;
+    border: solid #ffb2c0;
+    border-radius: 15px;
+}
+
+.hot-search .sea-content {
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.hot-search .sea-item {
+    width: 240px;
+    height: 280px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.new-post .post-item:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.sea-item img, .post-item img {
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    margin-left: 7px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+
+.new-post .post-content {
+    padding-top: 10px;
+}
+
+.new-post .post {
+    margin-top: 35px;
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 15%;
+    font-size: 17px;
+}
+
+.new-post .post:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+
+.new-post .post-img {
+    height: 100%;
+    width: 15%;
+    padding: 7px;
+}
+
+.new-post .post-info {
+    height: 100%;
+    width: 80%;
+    padding: 7px;
+}
+
+.new-post .post-name {
+    text-transform: uppercase;
+    color: #C90927;
+    font-size: 26px;
+}
+
+.new-post .post-money {
+    font-weight: bold;
+    color: #C90927;
+}
+ */
+
+@media only screen and (max-width: 739px) {
+    .slideshow-container {
+        margin-top: 150px;
+    }
+    .content {
+        display: block;
+        margin: auto;
+    }
+    
+    .hot-search {
+        width: 90%;
+        margin: auto;
+    }
+
+    .new-post {
+        width: 90%;
+        /* margin-left: 0; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .hot-search .sea-content .sea-content-child .sea-item {
+        width: 45%;
+    }
+}

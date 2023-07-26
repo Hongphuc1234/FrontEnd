@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #FFC0CB;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 24px 16px;
+    text-align: center;
+    color:rgb(104, 104, 104);
+    font-size: 1.6rem;
+}

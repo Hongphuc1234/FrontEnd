@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFC0CB;
+
+}
+
+.main {
+    background-image: linear-gradient(0, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/image/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.content {
+    /* padding-top: 10%;
+    margin-left: 15%; */
+    list-style-type: none;
+    /* display: flex; */
+    margin-bottom: 50px;
+}
+
+.row_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .profile {
+    margin-right: 7%;
+    /* display: block; */
+    border-style: solid;
+    border-color: #ffb2c0;
+    border-radius: 18px;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 4%;
+}
+
+.content .profile-name {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.content .fa-user-tie {
+    padding: 20px 20px;
+    font-size: 40px;
+    color: #ffb2c0;
+}
+
+.content .name {
+    padding: 20px;
+}
+
+.name .name-text {
+    font-size: 22px;
+    color: #ffb2c0;
+    font-weight: 500;
+}
+
+.name a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.profile .account {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.profile .post {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.profile,
+.info {
+    background-color: #fff;
+}
+
+.post a {
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.content .info {
+    margin-left: 10px;
+    display: block;
+    border-style: solid;
+    border-color: #ffb2c0;
+    border-radius: 4%;
+    height: auto;
+    width: 800px;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+
+.info .info-header {
+    color: #ffb2c0;
+    display: flex;
+}
+
+.info-header p {
+    margin-left: 80px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.info-header .filter {
+    margin-left: 50%;
+}
+
+.info .post {
+    margin-top: 35px;
+    display: flex;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 20%;
+    box-shadow: 2px 2px 2px 2px grey;
+    font-size: 17px;
+}
+
+.info .post-img {
+    height: 100%;
+    width: 20%;
+    padding: 7px;
+}
+
+.info .post-info {
+    height: 100%;
+    width: 80%;
+    padding: 7px;
+}
+
+.info .post-name {
+    text-transform: uppercase;
+    color: #6d6d6d;
+}
+
+.info .post-money {
+    font-weight: bold;
+}
+
+.info .post-position {
+    float: right;
+    font-size: 18px;
+
+}
+
+.info .post-position i {
+    margin-right: 10px;
+}
+
+
+.info .post-page {
+    float: right;
+    margin: 3px;
+    padding-right: 75px;
+
+}
+
+.info .post-page li {
+    display: inline;
+}
+
+.post-page a {
+    color: #4fa1a6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info .fa-circle-plus {
+    font-size: 35px;
+    color: var(--primary-color);
+    margin-bottom: 5%;
+}
+
+.filter {
+    margin-bottom: 5%;
+}
+
+.info .filter {
+    display: flex;
+}
+
+.filter p {
+    line-height: 29px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.sub-filter .sort {
+    display: inline;
+    padding: 5px;
+    margin-right: 15px;
+    border-color: #ffb2c0;
+    background-color: #ffb2c0;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.sub-filter .sort:hover {
+    color: #fff;
+    background-color: #a5bfd6;
+    border-color: #a5bfd6;
+}
+
+.page-number li {
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.page-number li a {
+    /* background-color: #f092da !important; */
+    border-radius: 5px;
+    color: red !important;
+    font-size: 14px;
+}
+
+.page-number li:first-child a {
+    background-color: unset !important;
+    border: 0;
+    margin-left: 0;
+}
+
+.page-number li:last-child a {
+    background-color: unset !important;
+    border: 0;
+
+}
+
+.page-number li a:hover {
+    background-color: #ffb2c0 !important;
+}
+
+.page-active {
+    background-color: #ffb2c0 !important;
+}
+
+/* .footer {
+    width: 100%;
+    height: 75px;
+    background-color: #ffb2c0;
+    text-align: center;
+    line-height: 75px;
+    color:#000;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+} */
